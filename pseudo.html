@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Practice</title>
+    <style>
+        h1{
+            background-color: yellow;
+        }
+        h1:hover{
+            color: blue;
+            background-color: blueviolet;
+            display: inline;
+            font-size: 40px;
+            font-weight: 700;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:visited{
+            color: green;
+        }
+        input:focus{
+            color: chartreuse;
+            font-weight: 700;
+        }
+        li:first-child{
+            color: rgba(55, 6, 129, 0.852);
+        }
+        li:last-child{
+            background-color: brown;
+        }
+        li:nth-child(2n-1){
+            font-size: 50px;
+        }
+        li::after{
+            content: 'Morse';
+            font-size: 11px;
+        }
+        li::before{
+            content: 'Basche';
+            font-size: 11px;
+        }
+        #swim{
+            position: relative;
+            bottom: 150px;
+        }
+        #boy{
+            position: relative;
+            top: 165px;
+            z-index: 1;
+        }
+        #ring{
+            position: relative;
+            top: 90px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is first</h1>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.youtube.com" target="_blank">Youtube</a>
+    <a href="https://www.facebook.com" target="_blank">FAcebook</a>
+    <a href="https://wiki.archlinux.org/title/fbsplash" target="_blank">Unknown</a>
+    <input type="button" value="LE CLICK">
+    <input type="text" name="textis">
+    <input type="text" name="Lke de">
+    <ul>
+        <li>HEKU</li>
+        <li>BEKU</li>
+        <li>CEKU</li>
+        <li>MEKU</li>
+        <li>TEKU</li>
+        <li>LEKU</li>
+    </ul>
+    <section id="swim">
+        <div>
+            <img id="boy" src="images/boy.svg" alt="">
+        </div>
+        <div>
+            <img id="ring" src="images/ring.svg" alt="">
+        </div>
+        <div>
+            <img id="water" src="images/water.svg" alt="">
+        </div>
+    </section>
+</body>
+</html>
